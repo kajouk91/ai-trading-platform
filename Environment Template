@@ -1,0 +1,34 @@
+الإعدادات العامة للمشروع
+PROJECT_NAME="AI Personal Trading Platform"
+API_V1_STR="/api/v1"
+ENVIRONMENT="development"
+إعدادات قاعدة بيانات PostgreSQL & TimescaleDB
+POSTGRES_SERVER=localhost
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres_password
+POSTGRES_DB=trading_db
+POSTGRES_PORT=5432
+إعدادات Redis
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_DB=0
+إعدادات RabbitMQ
+RABBITMQ_HOST=localhost
+RABBITMQ_PORT=5672
+RABBITMQ_USER=guest
+RABBITMQ_PASSWORD=guest
+أسماء قنوات RabbitMQ غير المتزامنة
+QUEUE_MARKET_DATA="market_data_queue"
+QUEUE_DECISIONS="trading_decisions_queue"
+QUEUE_EXECUTION_LOGS="execution_logs_queue"
+قواعد التداول القابلة للضبط (بدون قيم ثابتة في الكود)
+TRADING_PAIRS='["EURUSD", "XAUUSD", "BTCUSD", "GBPUSD"]'
+SUPPORTED_EXCHANGES='["MT5"]'
+TIMEFRAMES='["M1", "M5", "M15", "H1", "H4", "D1"]'
+MAX_RISK_PER_TRADE_PERCENT=1.5
+MAX_OPEN_TRADES=5
+DEFAULT_LEVERAGE=100
+إعدادات الاتصال بـ MetaTrader 5
+MT5_LOGIN=12345678
+MT5_PASSWORD=mt5_password_here
+MT5_SERVER=Broker-ServerName
